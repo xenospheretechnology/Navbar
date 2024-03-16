@@ -1,0 +1,62 @@
+.navbarlist {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+
+.logo {
+    float: left;
+    margin-right: 20px;
+    max-height: 100%;
+}
+
+li {
+    display: inline; /* Display list items inline */
+    text-decoration: none;
+    padding: 1.25 rem;
+  }
+  li a {
+    display: inline-block; /* Display links as blocks */
+    color: white; /* Text color */
+    padding: 1.1rem 1.5rem; /* Padding for space around the text */
+    text-decoration: none; /* Remove underline from links */
+}
+
+nav {
+    background-image: linear-gradient(#3636ff, #6868fc);
+    width: 100%;
+    height: 9.35%; /* Change height to auto */
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+}
+
+li a:hover {
+    background-color: #555; /* Background color on hover */
+}
+
+/* Apply flexbox for responsiveness */
+@media screen and (max-width: 768px) {
+    nav {
+        display: flex; /* Use flexbox */
+        justify-content: space-between; /* Align items to the ends */
+        align-items: center; /* Center items vertically */
+        padding: 10px; /* Adjust padding as needed */
+    }
+    
+    .navbarlist {
+        display: flex; /* Use flexbox */
+        justify-content: flex-end; /* Align items to the end */
+        margin: 0;
+        padding: 0;
+    }
+    
+    .navbarlist li {
+        margin-left: 10px; /* Adjust spacing between items */
+    }
+}
+body {
+    font-family: "Rubik", sans-serif
+}
